@@ -1,0 +1,3 @@
+lifetimes
+pandas
+numpy
