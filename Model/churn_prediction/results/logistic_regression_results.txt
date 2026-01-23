@@ -1,0 +1,24 @@
+===== Logistic Regression Results =====
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       719
+           1       1.00      0.98      0.99       359
+
+    accuracy                           0.99      1078
+   macro avg       0.99      0.99      0.99      1078
+weighted avg       0.99      0.99      0.99      1078
+
+ROC AUC: 0.9999806292397752
+
+Confusion Matrix:
+ [[719   0]
+ [  8 351]]
+
+Feature Coefficients:
+recency            11.334592
+frequency           0.400786
+avg_order_value    -0.037191
+tenure_days        -0.255983
+monetary           -0.403851
+dtype: float64

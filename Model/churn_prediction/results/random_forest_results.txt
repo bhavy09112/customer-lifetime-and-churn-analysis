@@ -1,0 +1,24 @@
+===== Random Forest Results =====
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       719
+           1       1.00      1.00      1.00       359
+
+    accuracy                           1.00      1078
+   macro avg       1.00      1.00      1.00      1078
+weighted avg       1.00      1.00      1.00      1078
+
+ROC AUC: 1.0
+
+Confusion Matrix:
+ [[719   0]
+ [  0 359]]
+
+Feature Importance:
+recency            0.867375
+tenure_days        0.079198
+frequency          0.025753
+monetary           0.022800
+avg_order_value    0.004875
+dtype: float64
