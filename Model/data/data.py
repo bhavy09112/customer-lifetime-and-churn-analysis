@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# Loading raw data
+# Loading raw excel data
 def load_data(path):
     return pd.read_excel(path)
 
@@ -69,4 +69,5 @@ if __name__ == "__main__":
     save_clean_data(df_clean, clean_path)
 
     print("Data cleaning complete.")
+    #telling about the reduced data set number
     print(f"Cleaned dataset shape: {df_clean.shape}")
