@@ -1,24 +1,25 @@
-===== Random Forest Results =====
+===== Random Forest (no recency) =====
 
+Features used: frequency, monetary, avg_order_value, tenure_days
+
+Classification Report:
               precision    recall  f1-score   support
 
-           0       1.00      1.00      1.00       719
-           1       1.00      1.00      1.00       359
+           0       0.89      0.65      0.75       576
+           1       0.54      0.83      0.66       287
 
-    accuracy                           1.00      1078
-   macro avg       1.00      1.00      1.00      1078
-weighted avg       1.00      1.00      1.00      1078
+    accuracy                           0.71       863
+   macro avg       0.71      0.74      0.70       863
+weighted avg       0.77      0.71      0.72       863
 
-ROC AUC: 1.0
+Confusion Matrix (raw counts):
+[[374 202]
+ [ 48 239]]
 
-Confusion Matrix:
- [[719   0]
- [  0 359]]
+ROC AUC: 0.7847
 
-Feature Importance:
-recency            0.867375
-tenure_days        0.079198
-frequency          0.025753
-monetary           0.022800
-avg_order_value    0.004875
-dtype: float64
+Feature importances (ascending):
+avg_order_value    0.077790
+monetary           0.181491
+frequency          0.218055
+tenure_days        0.522663

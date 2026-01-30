@@ -1,24 +1,19 @@
-===== Logistic Regression Results =====
+===== Logistic Regression (no recency) =====
 
+Features used: frequency, monetary, avg_order_value, tenure_days
+
+Classification Report:
               precision    recall  f1-score   support
 
-           0       0.99      1.00      0.99       719
-           1       1.00      0.98      0.99       359
+           0       0.82      0.65      0.73       576
+           1       0.50      0.72      0.59       287
 
-    accuracy                           0.99      1078
-   macro avg       0.99      0.99      0.99      1078
-weighted avg       0.99      0.99      0.99      1078
+    accuracy                           0.67       863
+   macro avg       0.66      0.68      0.66       863
+weighted avg       0.72      0.67      0.68       863
 
-ROC AUC: 0.9999806292397752
+Confusion Matrix (raw counts):
+[[374 202]
+ [ 81 206]]
 
-Confusion Matrix:
- [[719   0]
- [  8 351]]
-
-Feature Coefficients:
-recency            11.334592
-frequency           0.400786
-avg_order_value    -0.037191
-tenure_days        -0.255983
-monetary           -0.403851
-dtype: float64
+ROC AUC: 0.7657

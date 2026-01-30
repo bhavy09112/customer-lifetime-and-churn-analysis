@@ -9,7 +9,7 @@ def load_data(path):
 def engineer_customer_features(df):
     df = df.copy()
 
-    # Reference date = last date in dataset + 1 day
+    # Reference date = last date in dataset + 1 day calculating recency
     snapshot_date = df["invoicedate"].max() + pd.Timedelta(days=1)
 
     customer_features = (
